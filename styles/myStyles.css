@@ -26,7 +26,7 @@ h1 {
   box-sizing: border-box;
 }
 
-
+  
 .content {
   padding: 50px 2% 250px;
 }
@@ -119,18 +119,29 @@ nav.stroke ul li a:hover:after {
 }
 
 .section1 {
-  
+
 }
 .section1 .box {
 	border: 1px solid black;
 }
 .box1{
 	background-color: grey;
+  height: 200px;
+  text-align: center;
 } 
 .box1:hover{
-	background-color: blue;
+	background-color: lightgrey;
 }
-
+.box2{
+    height: 200px;
+    text-align: center;    
+}
+.box2 img{
+  height: 100%;
+}
+.box2:hover{
+  background-color: lightgrey;
+}
 .section2 {
  
 }
