@@ -1,0 +1,23 @@
+{
+  "name": "frontstrong",
+  "version": "1.0.0",
+  "description": "strona testowa do re-designu obecnej strony kuzisport.pl",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KacperSiuda/FrontStrong.git"
+  },
+  "author": "Junik&Siuda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KacperSiuda/FrontStrong/issues"
+  },
+  "homepage": "https://github.com/KacperSiuda/FrontStrong#readme",
+  "dependencies": {
+    "bower": "^1.7.9",
+    "gulp": "^3.9.1"
+  }
+}

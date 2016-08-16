@@ -1,0 +1,22 @@
+{
+  "name": "frontstrong",
+  "description": "strona testowa do re-designu obecnej strony kuzisport.pl",
+  "main": "index.html",
+  "authors": [
+    "Junik&Siuda"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/KacperSiuda/FrontStrong",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "aos": "^2.0.4",
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.0"
+  }
+}
