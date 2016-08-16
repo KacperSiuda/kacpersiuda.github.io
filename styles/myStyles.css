@@ -19,18 +19,6 @@ h1 {
   width: 100%;
 }
 
-/*.row {
-  width: 100%;
-  max-width: 940px;
-  margin: 0 auto;
-  position: relative;
-  padding: 0 2%;
-}
-  
-.content {
-  padding: 50px 2% 250px;
-}*/
-
 .navbar-brand>img {
   height: 100%;
 }
@@ -49,9 +37,7 @@ h1 {
   line-height: 30px;
   text-transform: uppercase;
   -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  
-  
+  transition: all 0.3s;  
 }
 
 .logo{
@@ -118,27 +104,40 @@ nav.stroke ul li a:hover:after {
 .section1 {
 
 }
-.section1 .box {
-	border: 1px solid black;
+.box{
+  height: 200px;
+}
+.box img{
+    height: 100%; 
+}
+.box p{
+  font-size: 0.85em;
+}
+.box:hover{
+  cursor: pointer;
+  background-color: lightgrey;
+  transition: 0.5s;
 }
 .box1{
 	background-color: grey;
-  height: 200px;
-  text-align: center;
-} 
-.box1:hover{
-	background-color: lightgrey;
 }
-.box2{
-    height: 200px;
-    text-align: center;    
+.box2:hover img{
+  animation: rorate 3s 0s infinite linear;
 }
-.box2 img{
-  height: 100%;
+.box3{
+  background-color: #f44336;
 }
-.box2:hover{
-  background-color: lightgrey;
+.box4{
+  
 }
+.box5{
+  background-color: grey;
+}
+
+
+
+
+
 .section2 {
  
 }
@@ -157,6 +156,30 @@ nav.stroke ul li a:hover:after {
   width: 100%;
   margin: auto;
 }
+@keyframes rorate{
+  0%{
+    transform: rotate(0deg);
+  }
+  25%{
+    transform: rotate(90deg);    
+  }
+  50%{
+    transform: rotate(180deg);    
+  }
+  75%{
+    transform: rotate(270deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+
+
+}
+
+
+
+
+
 @-webkit-keyframes scroll {
   0% {
     opacity: 1;
