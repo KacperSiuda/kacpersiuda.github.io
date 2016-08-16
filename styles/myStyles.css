@@ -121,6 +121,15 @@ nav.stroke ul li a:hover:after {
 .section1 {
   
 }
+.section1 .box {
+	border: 1px solid black;
+}
+.box1{
+	background-color: grey;
+} 
+.box1:hover{
+	background-color: blue;
+}
 
 .section2 {
  
