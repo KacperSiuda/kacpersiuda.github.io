@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AACI,OAAE,CACE,KAAK,CAAE,KAAK",
-"sources": ["../sass/myStyle.scss"],
-"names": [],
-"file": "myStyle.css"
-}
