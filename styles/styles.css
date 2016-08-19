@@ -1,6 +1,25 @@
-body h1 {
-  color: red; }
+body {
+  margin: 0px; }
 
-.top-navigation ul {
-  display: inline-block;
-  text-decoration: none; }
+.top-navigation {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  top: 0;
+  width: 100%;
+  background-color: dimgrey; }
+  .top-navigation img {
+    height: auto;
+    float: left; }
+  .top-navigation ul {
+    list-style-type: none; }
+  .top-navigation li {
+    float: right; }
+    .top-navigation li a {
+      display: block;
+      color: darkred;
+      text-align: center;
+      text-decoration: none;
+      padding: 14px 16px; }
+    .top-navigation li a:hover {
+      background-color: black; }

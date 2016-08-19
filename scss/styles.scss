@@ -1,12 +1,36 @@
 body{
-    h1{
-        color: red;
-    }
+    margin: 0px;
 }
+
 .top-navigation{
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        top:0;
+        width: 100%;
+        background-color: dimgrey;
+    img{
+        height: auto;
+        float: left;
+    }
+
+
     ul{
-        display: inline-block;
-        text-decoration: none;
+        list-style-type: none;
+
+    }
+    li{
+        float: right;
+        a{
+            display: block;
+            color: darkred;
+            text-align: center;
+            text-decoration: none;
+            padding: 14px 16px;
+        }
+        a:hover{
+            background-color: black;
+        }
     }
 
 
