@@ -1,5 +1,6 @@
 body{
     margin: 0px;
+    background-color: beige;
 }
 
 .top-navigation{
@@ -8,10 +9,13 @@ body{
         overflow: hidden;
         top:0;
         width: 100%;
-        background-color: dimgrey;
+        height: 60px;
+        background-color: black;
     img{
-        height: auto;
+        height: 100%;
+        margin-left: 50px;
         float: left;
+
     }
 
 
@@ -24,12 +28,13 @@ body{
         a{
             display: block;
             color: darkred;
+            border-bottom: 1px solid transparent;
             text-align: center;
             text-decoration: none;
-            padding: 14px 16px;
+            padding: 20px 16px;
         }
         a:hover{
-            background-color: black;
+            text-shadow: 2px 2px red;
         }
     }
 
