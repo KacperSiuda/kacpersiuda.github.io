@@ -39,7 +39,7 @@ ul, ol {
 .navigation-item {
   display: inline-block;
   padding: 10px;
-  font-size: 20px;
+  font-size: 14px;
   text-transform: uppercase; }
 
 .navigation-title {
@@ -54,7 +54,6 @@ ul, ol {
   opacity: 0.9;
   transition: 0.3s ease-in; }
   .navigation.tiny ul {
-    font-size: 15px;
     margin-top: 25px;
     transition: margin-top 0.3s ease-in-out; }
 
