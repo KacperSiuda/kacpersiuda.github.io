@@ -14,9 +14,12 @@ ul, ol {
 	NAVIGATION BAR
 -----------------------------------------------*/
 .navigation {
+  position: fixed;
+  top: 0;
   background-color: #161515;
   width: 100%;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  z-index: 2; }
   .navigation ul {
     float: right;
     display: inline-block;
@@ -45,13 +48,21 @@ ul, ol {
 /* --------------------------------------------
 					NEWS 
 -----------------------------------------------*/
+.news {
+  position: absolute;
+  top: 200px;
+  z-index: 1; }
+
 .news-item {
   background-color: #F4F4F4;
   display: block;
-  font-size: 40px;
-  margin: 20px; }
+  margin: 20px;
+  width: 500px; }
 
 .news-item-title {
+  color: #AF3A2F;
+  display: block;
+  font-size: 40px;
   text-align: center; }
 
 /* --------------------------------------------
@@ -59,7 +70,8 @@ ul, ol {
 -----------------------------------------------*/
 .meta-information li {
   display: inline;
-  font-size: 20px; }
+  font-size: 15px;
+  font-style: italic; }
 
 /* --------------------------------------------
 				CONTAINER
@@ -69,5 +81,5 @@ ul, ol {
   margin: 0 auto; }
 
 .container-main {
-  max-width: 800px;
+  max-width: 500px;
   margin: 0 auto; }

@@ -25,9 +25,12 @@ a{
 	NAVIGATION BAR
 -----------------------------------------------*/
 .navigation{
+	position: fixed;
+	top: 0;
 	background-color: $menu-main-color;
 	width:100%;
 	margin-bottom: 40px;
+	z-index:2;
 	ul{
 		float: right;
 		display:inline-block;
@@ -60,16 +63,23 @@ a{
 					NEWS 
 -----------------------------------------------*/
 .news{
-	
+	position: absolute;
+	top: 200px;
+	z-index: 1;
 }
+	
 .news-item{
 	background-color: $section-color;
 	display:block;
-	font-size: 40px;
 	margin: 20px;
+	width: 500px;
 }
 .news-item-title{
+	color: $button-color;
+	display: block;
+	font-size: 40px;
 	text-align: center;
+
 }
 /* --------------------------------------------
 				META INFORMATION 
@@ -77,7 +87,8 @@ a{
 .meta-information{
 	li{
 		display: inline;
-		font-size: 20px;
+		font-size: 15px;
+		font-style: italic;
 	}
 }
 
@@ -90,6 +101,6 @@ a{
 	margin: 0 auto;
 }
 .container-main{
-	max-width: 800px;
+	max-width: 500px;
 	margin: 0 auto;
 }
