@@ -1,10 +1,5 @@
-$(window).scroll(function() {
+$(window).on("scroll touchmove", function () {
+    $('.navigation-logo').toggleClass('tiny', $(document).scrollTop() > 20);
+    $('.navigation').toggleClass('tiny', $(document).scrollTop() > 0);
 
-    if ($(window).scrollTop() > 100) {
-        $('.navbar').addClass('sticky');
-        $('.logo').addClass('logo-sticky');
-    } else {
-        $('.navbar').removeClass('sticky');
-        $('.logo').removeClass('logo-sticky');
-    }
 });

@@ -16,11 +16,6 @@ a{
 
 }
 
-
-
-
-
-
 /* --------------------------------------------
 	NAVIGATION BAR
 -----------------------------------------------*/
@@ -30,12 +25,15 @@ a{
 	background-color: $menu-main-color;
 	width:100%;
 	margin-bottom: 40px;
+	opacity:1;
+	transition: 0.3s ease-in-out;
 	z-index:2;
 	ul{
 		float: right;
 		display:inline-block;
 		list-style-type:none;
 		margin-top: 50px;
+		transition: margin-top 0.3s ease-in-out;
 	}
 }
 .navigation-logo{
@@ -43,6 +41,7 @@ a{
 	padding:0;
 	border:0;
 	height: 150px;
+	transition: height 0.3s ease-in-out;
 }
 .navigation-item{
     display: inline-block;
@@ -56,8 +55,22 @@ a{
     text-decoration: none;
     &:hover{
     	color: $button-color;
-    	transition: 0.5s ease;
+    	transition: 0.3s ease-in-out;
     }
+}
+.navigation.tiny{
+	height: 100px;
+	opacity: 0.9;
+	transition: 0.3s ease-in;
+	ul{
+		font-size: 15px;
+		margin-top: 25px;
+		transition: margin-top 0.3s ease-in-out;
+	}
+}
+.navigation-logo.tiny{
+	height: 100px;
+	transition: height 0.3s ease-out;
 }
 /* --------------------------------------------
 					NEWS 
