@@ -1,29 +1,73 @@
-body {
-  margin: 0px;
-  background-color: beige; }
-
-.top-navigation {
-  margin: 0;
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+/* -----------------------------------------------
+	Colors:
+	menu-main-color: rgb(22 21 21)    -> #161515
+	menu-item-title: rgb(205 128 70)  -> #CD8046
+	logo, buttons: 	 rgb(175 58 47)   -> #AF3A2F
+	section: 		 rgb(244 244 244) -> #F4F4F4
+--------------------------------------------------*/
+ul, ol {
   padding: 0;
-  overflow: hidden;
-  top: 0;
+  margin: 0; }
+
+/* --------------------------------------------
+	NAVIGATION BAR
+-----------------------------------------------*/
+.navigation {
+  background-color: #161515;
   width: 100%;
-  height: 60px;
-  background-color: black; }
-  .top-navigation img {
-    height: 100%;
-    margin-left: 50px;
-    float: left; }
-  .top-navigation ul {
-    list-style-type: none; }
-  .top-navigation li {
-    float: right; }
-    .top-navigation li a {
-      display: block;
-      color: darkred;
-      border-bottom: 1px solid transparent;
-      text-align: center;
-      text-decoration: none;
-      padding: 20px 16px; }
-    .top-navigation li a:hover {
-      text-shadow: 2px 2px red; }
+  margin-bottom: 40px; }
+  .navigation ul {
+    float: right;
+    display: inline-block;
+    list-style-type: none;
+    margin-top: 50px; }
+
+.navigation-logo {
+  display: inline-block;
+  padding: 0;
+  border: 0;
+  height: 150px; }
+
+.navigation-item {
+  display: inline-block;
+  padding: 10px;
+  font-size: 20px;
+  text-transform: uppercase; }
+
+.navigation-title {
+  color: #CD8046;
+  text-decoration: none; }
+  .navigation-title:hover {
+    color: #AF3A2F;
+    transition: 0.5s ease; }
+
+/* --------------------------------------------
+					NEWS 
+-----------------------------------------------*/
+.news-item {
+  background-color: #F4F4F4;
+  display: block;
+  font-size: 40px;
+  margin: 20px; }
+
+.news-item-title {
+  text-align: center; }
+
+/* --------------------------------------------
+				META INFORMATION 
+-----------------------------------------------*/
+.meta-information li {
+  display: inline;
+  font-size: 20px; }
+
+/* --------------------------------------------
+				CONTAINER
+-----------------------------------------------*/
+.container {
+  max-width: 1500px;
+  margin: 0 auto; }
+
+.container-main {
+  max-width: 800px;
+  margin: 0 auto; }
