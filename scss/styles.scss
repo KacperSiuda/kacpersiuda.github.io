@@ -17,10 +17,8 @@ h1,h2,h3,h4,h5,h6{
 font-family: 'Roboto Slab',serif;
 }
 ul,ol{
-	padding:0;
-	margin:0;
+	@include reset-boxmodel();
 	list-style: none;
-	padding-left: 0;
 }
 li{
 
@@ -33,28 +31,27 @@ a{
 	NAVIGATION BAR
 -----------------------------------------------*/
 .navigation{
-	position: fixed;
-	top: 0;
 	background-color: $menu-main-color;
-	width:100%;
 	margin-bottom: 40px;
 	opacity:1;
-	transition: 0.3s ease-in-out;
+	position: fixed;
+	top: 0;
+	width:100%;
+	@include links-transition(0.3s);
 	z-index:4;
 	ul{
 		float: right;
 		display:inline-block;
 		list-style-type:none;
-		margin-top: 50px;
-		transition: margin-top 0.3s ease-in-out;
+    margin-top: 50px;
+    @include webkit-transition(margin-top 0.3s ease-in-out);
 	}
 }
 .navigation-logo{
 	display: inline-block;
-	padding:0;
-	border:0;
-	height: 150px;
-	transition: height 0.3s ease-in-out;
+	@include reset-boxmodel();
+	height: $menu-height;
+  @include webkit-transition(height 0.3s ease-in-out);
 }
 .navigation-item{
     display: inline-block;
@@ -72,17 +69,19 @@ a{
     }
 }
 .navigation.tiny{
+	animation: tiny-menu-animation 0.3s;
 	z-index:4;
-	height: 100px;
+
+	
 	opacity: 0.9;
-	transition: 0.3s ease-in;
+	transition: 0.5s ease-in;
 	ul{
-		margin-top: 25px;
+		margin-top: 0px;
 		transition: margin-top 0.3s ease-in-out;
 	}
 }
 .navigation-logo.tiny{
-	height: 100px;
+	height: 50px;
 	transition: height 0.3s ease-out;
 }
 /* --------------------------------------------
@@ -296,3 +295,23 @@ ul.social-icons{
 					shop widgets
 -----------------------------------------------*/
 
+/* --------------------------------------------
+					Animation
+-----------------------------------------------*/
+@keyframes tiny-menu-animation{
+	0%{
+		height: $menu-height;
+	}
+	25%{
+		height: $menu-height/4;
+	}
+	50%,75%{
+		height: 100px;
+	}
+  75%{
+    height: 75px;
+  }
+	100%{
+		height: 50px;
+	}
+}

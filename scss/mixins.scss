@@ -4,4 +4,13 @@
   -moz-transition: $duration;
   -webkit-transition: $duration;
 }
-
+@mixin reset-boxmodel(){
+	border:0;
+	padding:0;
+}
+@mixin webkit-transition($activity...){
+	-o-transition: 		$activity;
+	-ms-transition: 	$activity;
+	-moz-transition: 	$activity;
+	-webkit-transition: $activity;
+}
