@@ -1,0 +1,6 @@
+@mixin links-transition($duration) {
+  -o-transition: $duration;
+  -ms-transition: $duration;
+  -moz-transition: $duration;
+  -webkit-transition: $duration;
+}
