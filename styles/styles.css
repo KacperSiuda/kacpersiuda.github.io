@@ -176,6 +176,7 @@ article .post-body p {
 
 .read-more {
   text-transform: uppercase;
+  color: #e74c3c;
   letter-spacing: 2px;
   font-size: 11px;
   padding: 7px 16px 8px;
@@ -196,6 +197,9 @@ article .post-body p {
 
 /* --------------------------------------------
 					Rightside widgets
+-----------------------------------------------*/
+/* --------------------------------------------
+					Default styles (about)
 -----------------------------------------------*/
 .widget {
   background: #ffffff;
@@ -241,6 +245,9 @@ article .post-body p {
     max-width: 100%;
     width: 100%; }
 
+/* --------------------------------------------
+					Social widget
+-----------------------------------------------*/
 ul.social-icons {
   text-align: center; }
   ul.social-icons li {
@@ -263,3 +270,7 @@ ul.social-icons {
     color: #fff;
     border: 1px solid #EE8176;
     text-decoration: none; }
+
+/* --------------------------------------------
+					shop widgets
+-----------------------------------------------*/
