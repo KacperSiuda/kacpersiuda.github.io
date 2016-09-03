@@ -26,67 +26,105 @@ li{
 a{
 
 }
+/* ---------------------------------------------------------------------------------------------
+                                              HEADER
+------------------------------------------------------------------------------------------------*/
+/* --------------------------------------------
+	                   WRAPER
+-----------------------------------------------*/
+.top-wrapper{
+  position:fixed;
+  background-color: $menu-main-color;
+  height: 50px;
+  top: 0;
+  opacity: 0;
+  width: 100%;
+  z-index:4;
+  visibility: hidden;
+  @include links-transition(0.4s);
+
+  img{
+    display:block;
+    float: left;
+    height: 50px;
+    margin-left: 40px;
+  }
+}
+.wrapper-nav{
+  float: right;
+  @include reset-boxmodel;
+  height: 50px;
+}
+.wrapper-item{
+  display:inline;
+}
+.wrapper-title{
+  display:inline-block;
+  padding: 10;
+  font-size: 14px;
+  text-transform: uppercase;
+  height: 50px;
+  color: $menu-item-color;
+  &:hover{
+    color: $button-color;
+    background-color: #E6E6E6;
+    @include links-transition(0.4s);
+    text-decoration:none;
+  }
+}
+.top-wrapper.show{
+  visibility: visible;
+  opacity: 0.9;
+  @include links-transition(0.4s);
+}
+
 
 /* --------------------------------------------
-	NAVIGATION BAR
+                  HEADER
 -----------------------------------------------*/
-.navigation{
-	background-color: $menu-main-color;
-	margin-bottom: 40px;
-	opacity:1;
-	position: fixed;
-	top: 0;
-	width:100%;
-	@include links-transition(0.3s);
-	z-index:4;
-	ul{
-		float: right;
-		display:inline-block;
-		list-style-type:none;
-    margin-top: 50px;
-    @include webkit-transition(margin-top 0.3s ease-in-out);
-	}
+.header{
+  background-color: $menu-main-color;
+  @include reset-boxmodel;
 }
-.navigation-logo{
-	display: inline-block;
-	@include reset-boxmodel();
-	height: $menu-height;
-  @include webkit-transition(height 0.3s ease-in-out);
+.logo{
+
+  display: block;
+  margin: 5px auto 10px;
 }
-.navigation-item{
-    display: inline-block;
-    padding: 10px;
-    font-size: 14px;
-    text-transform: uppercase;
+.header-nav{
+  @include reset-boxmodel;
+  border: 1px solid #E6E6E6;
+  border-width: 2px 0;
+  text-align: center;
+  ol{
+    margin:0;
+  } 
 
 }
-.navigation-title{
-    color: $menu-item-color;
-    text-decoration: none;
-    &:hover{
-    	color: $button-color;
-    	transition: 0.3s ease-in-out;
-    }
+.header-nav-item{
+  display: inline;
 }
-.navigation.tiny{
-	animation: tiny-menu-animation 0.3s;
-	z-index:4;
+.header-nav-title{
+  border: 1px solid transparent;
+  border-width: 1px 0 ;
+  display: inline-block;
+  padding: 10px 20px 10px 20px;
+  font-size: 14px;
+  color: $button-color;
+  text-transform: uppercase;
+  &:hover{
+    border: 1px solid $menu-main-color;
+    border-width: 1px 0 ;
+    color: $menu-main-color;
+    @include links-transition(0.3s);
+    text-decoration:none;
+  }
 
-	
-	opacity: 0.9;
-	transition: 0.5s ease-in;
-	ul{
-		margin-top: 0px;
-		transition: margin-top 0.3s ease-in-out;
-	}
 }
-.navigation-logo.tiny{
-	height: 50px;
-	transition: height 0.3s ease-out;
-}
-/* --------------------------------------------
-					BLOG
------------------------------------------------*/
+
+/* ---------------------------------------------------------------------------------------------
+                                              BLOG
+------------------------------------------------------------------------------------------------*/
 
 
 /* --------------------------------------------
@@ -104,7 +142,7 @@ a{
 
 
 #blog-body{
-	padding-top: 185px;
+	padding-top: 50px;
 }
 
 /* --------------------------------------------
