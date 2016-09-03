@@ -315,10 +315,10 @@ ul.social-icons{
 .social-icons li a .fa {
   border: 1px solid #e8e8e8;
   color: $blog-accent;
-  width: 30px;
-  height: 30px;
+  width: 45px;
+  height: 45px;
   text-align: center;
-  line-height: 29px;
+  line-height: 45px;
   margin-left: 3px;
   @include links-transition(.3s);
   &:hover{

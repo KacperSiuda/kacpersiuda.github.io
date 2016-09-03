@@ -310,10 +310,10 @@ ul.social-icons {
 .social-icons li a .fa {
   border: 1px solid #e8e8e8;
   color: #e74c3c;
-  width: 30px;
-  height: 30px;
+  width: 45px;
+  height: 45px;
   text-align: center;
-  line-height: 29px;
+  line-height: 45px;
   margin-left: 3px;
   -o-transition: 0.3s;
   -ms-transition: 0.3s;

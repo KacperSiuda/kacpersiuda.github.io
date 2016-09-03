@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
+var imagemin = require('gulp-imagemin');
 
 gulp.task('sass', function(){
   return gulp.src('scss/**/*.scss')
@@ -27,6 +28,13 @@ gulp.task('sass', function() {
       stream: true
     }))
 });
+
+gulp.task('images', function(){
+  return gulp.src('resources/**/*.+(png|jpg|gif|svg)')
+  .pipe(imagemin())
+  .pipe(gulp.dest('resources/images'))
+});
+
 
 
 
